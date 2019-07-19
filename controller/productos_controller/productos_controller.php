@@ -1,7 +1,7 @@
 <?php
-require_once 'model/persona_model.php';
+require_once 'model/productos_model/producto_model.php';
 
-class persona_controller{
+class productos_controller{
     private $model_p;
 
 
@@ -12,7 +12,7 @@ class persona_controller{
     function index(){
         $query = $this->model_p->get();
                     
-        require_once 'view/persona_view.php';
+        require_once 'view/productos_view/producto_view.php';
                 
     }
     function persona(){
