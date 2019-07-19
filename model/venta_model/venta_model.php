@@ -17,21 +17,20 @@ class venta_model{
     }
     
     function insertar($dato){
-        $sql = "insert into tblpersonas (nombre) values"."('".$dato['nombre']."')";
+        $sql = "insert into tblventa (fecha,cedula,totalfactura) values"."('".$dato['fecha']."',".$dato['cedula'].",".$dato['totalfactura'].")";
         
         mysqli_query($this->bd,$sql) or die("Error de conexion");
     }
     
     function eliminar($id){
-        $sql = "delete from tblpersonas where id= '$id'";
+        $sql = "delete from tblventa where idfactura= '$id'";
         
         mysqli_query($this->bd,$sql) or die("Error de conexion");
         
     }
     
-    function actualizar($nombre,$id){
-        $sql = "update tblpersonas set nombre ='".$nombre['nombre']."' where id=$id";
-        
+    function actualizar($data,$id){
+        $sql = "update tblventa set fecha ='".$data['fecha']."',cedula=".$data['cedula'].",totalfactura=".$data['totalfactura']." where idfactura=$id";
         mysqli_query($this->bd,$sql) or die("Error de conexion");
     }
     
