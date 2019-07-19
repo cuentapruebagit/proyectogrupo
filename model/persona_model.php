@@ -17,7 +17,7 @@ class persona_model{
     }
     
     function insertar($dato){
-        $sql = "insert into tblpersonas (nombre) values"."('".$dato['nombre']."')";
+        $sql = "insert into tblproveedores (nitproveedor, razonsocial, telefono, direccion, nombrecontacto,cargocontacto,celular, pagweb) VALUES"."('".$dato['nitproveedor'].", ".$dato['razonsocial'].", ".$dato['telefono'].", ".$dato['direccion'].", ".$dato['nombrecontacto'].", ".$dato['cargocontacto'].", ".$dato['celular'].", ".$dato['pagweb']."')";
         
         mysqli_query($this->bd,$sql) or die("Error de conexion");
     }

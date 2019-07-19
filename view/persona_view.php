@@ -15,7 +15,7 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <a href="index.php?m=persona">&nbsp;Nuevo Registro&nbsp;</a>
+                        <a href="index.php?m=persona">&nbsp;Nuevo Proveedor&nbsp;</a>
                         <a href="index.php?m=ePersona">&nbsp;Eliminar Registro&nbsp;</a>
                         <a href="index.php?m=aPersona">&nbsp;Actualizar Registro&nbsp;</a>
                     </div>
