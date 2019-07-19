@@ -1,8 +1,8 @@
 <?php
 require_once 'bd/conexion.php';
-require_once 'controller/persona_controller.php';
+require_once 'controller/venta_controller/venta_controller.php';
 
-$controller = new persona_controller();
+$controller = new venta_controller();
 
 
 if(!empty($_REQUEST['m'])){

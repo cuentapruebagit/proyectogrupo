@@ -12,7 +12,7 @@
     <body>
 
         <div class="container">
-            <h2>Formulario nuevo registro</h2>
+            <h2>Formulario nuevo registro de venta</h2>
 
             <form action="index.php?m=guardar" method="post">
                 <label>Ingrese Nombre:</label>
