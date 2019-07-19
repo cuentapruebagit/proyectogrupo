@@ -22,7 +22,7 @@
 		<div class="row" >
 			<div class="col-md-4 col-xs-12" style="text-align: left" >
 				<!--<button style="width: 100%; margin-top: 30px; margin-left: 20px;" type="button" class="btn btn-secondary">Ver Clientes</button>-->
-				<button style="width: 100%; margin: 20px;" type="button" class="btn btn-secondary">Agregar Nuevo Cliente</button>
+				<button style="width: 100%; margin: 20px;" type="button" class="btn btn-secondary"><a href="../index.php"> Agregar Nuevo Cliente</a></button>
 				<button style="width: 100%; margin: 20px;" type="button" class="btn btn-secondary">Eliminar Clientes</button>
 				<button style="width: 100%; margin: 20px;" type="button" class="btn btn-secondary">Editar info Cliente</button>
 			</div>
