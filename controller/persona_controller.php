@@ -55,9 +55,18 @@ class persona_controller{
 
     function actPersona(){
 
-        $data['nombre'] = $_REQUEST['txtnombre1'];
-        $id = $_REQUEST['txtid'];
-        $this->model_p->actualizar($data,$id);
+        $data['nitproveedor'] = $_REQUEST['txtnitproveedor'];
+        $data['razonsocial'] = $_REQUEST['txtrazonsocial'];
+        $data['telefono'] = $_REQUEST['txttelefono'];
+        $data['direccion'] = $_REQUEST['txtdireccion'];
+        $data['nombrecontacto'] = $_REQUEST['txtnombrecontacto'];
+        $data['cargocontacto'] = $_REQUEST['txtcargocontacto'];
+        $data['celular'] = $_REQUEST['txtcelular'];
+        $data['pagweb'] = $_REQUEST['txtpagweb'];
+        
+        
+        $nitproveedor = $_REQUEST['txtnitproveedor'];
+        $this->model_p->actualizar($data,$nitproveedor);
         $this->index();
 
     }
