@@ -32,7 +32,7 @@ class productos_controller{
     function acProducto(){
 
 		
-        require_once 'view/actualizarPersona.php';
+        require_once 'view/productos_view/actualizarProducto.php';
         
     }
 
@@ -53,11 +53,14 @@ class productos_controller{
 
     }
 
-    function actPersona(){
+    function actProducto(){
 
-        $data['nombre'] = $_REQUEST['txtnombre1'];
-        $id = $_REQUEST['txtid'];
-        $this->model_p->actualizar($data,$id);
+        $datas['id'] = $_REQUEST['txtid'];
+        $datas['nombre'] = $_REQUEST['txtnombre'];
+        $datas['precio'] = $_REQUEST['txtprecio'];
+        $datas['proveedor'] = $_REQUEST['txtproveedor'];
+        $datas['descripcion'] = $_REQUEST['txtdescrip'];
+        $this->model_p->actualizar($datas);
         $this->index();
 
     }

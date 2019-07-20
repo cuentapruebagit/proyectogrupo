@@ -30,8 +30,8 @@ class producto_model{
         
     }
     
-    function actualizar($nombre,$id){
-        $sql = "update tblpersonas set nombre ='".$nombre['nombre']."' where id=$id";
+    function actualizar($datos){
+        $sql = "update tblproductos set nombre ='".$datos['nombre']."',precio='".$datos['precio']."', descripcion='".$datos['descripcion']."', nitproveedor='".$datos['proveedor']."' where idproducto='".$datos['id']."'";
         
         mysqli_query($this->bd,$sql) or die("Error de conexion");
     }
