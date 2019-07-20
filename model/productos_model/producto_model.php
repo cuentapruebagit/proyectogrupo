@@ -1,5 +1,5 @@
 <?php
-class persona_model{
+class producto_model{
     private $bd;
     private $producto;
     
@@ -17,9 +17,10 @@ class persona_model{
     }
     
     function insertar($dato){
-        $sql = "insert into tblpersonas (nombre) values"."('".$dato['nombre']."')";
+        $sql = "insert into tblproductos (nombre,precio,descripcion,nitproveedor) values"."('".$dato['nombre']."','".$dato['precio']."','".$dato['descripcion']."','".$dato['proveedor']."')";
         
-        mysqli_query($this->bd,$sql) or die("Error de conexion");
+        mysqli_query($this->bd,$sql) or die("Error..."." ".mysqli_error($this->bd));
+
     }
     
     function eliminar($id){

@@ -36,10 +36,10 @@
 								
 								<td></td>
 								<th> ID </th>
-								<th>NOMBRE</th>
-								<TH>PRECIO</TH>
-								<th>DESCRIPCION</th>
-								<th>NIT DEL PROVEEDOR</th>
+								<th>-NOMBRE-</th>
+								<TH>-PRECIO-</TH>
+								<th>-NIT PROVEEDOR-</th>
+								<th>-DESCRIPCION</th>
 							</tr>
 
 						</thead>
@@ -52,8 +52,7 @@
 								<td><?php echo $data['descripcion'] ?> </td>
 								<td><?php echo $data['nitproveedor'] ?> </td>
 
-								<!--<td>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $data['nombre'] ?> </td>-->
-
+								
 							</tr>
 							<?php endforeach; ?>        
 						</tbody>

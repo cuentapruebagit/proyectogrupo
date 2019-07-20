@@ -19,9 +19,17 @@
 					<label>Nombre Del Producto:</label><br>
 					<input type="text" class="" name="txtnombre" maxlength="50"  required><br><br>
 					<label>Precio:</label><br>
-					<input type="number" class="" name="txtprecio" maxlength="10" required><br><br>
-					<label>Nit Proveedor:</label><br>
-					<input type="number" class="" name="txtproveedor" maxlength="10" required><br><br>
+					<input type="number" class="" name="txtprecio" min="0" max="9999999999" required><br><br>
+                    <div>
+                        <label>Nit proveedor:</label><br>
+                    <select name="sel_proveedor" class="form-control">
+                    <option value="0">--Selecciona--</option>
+                        <?php foreach($query as $row) :  ?>
+                        <option value="<?php echo $row['nitproveedor']?>"><?php echo $row['nitproveedor'] ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                    </div>
+                    <br>
 					<label >Descripcion</label><br>
 					<textarea name="txtdescrip" id="txtdescrip" cols="30" rows="3"></textarea><br><br>
 					<br><br><br>

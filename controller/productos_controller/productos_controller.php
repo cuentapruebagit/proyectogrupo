@@ -1,12 +1,15 @@
 <?php
 require_once 'model/productos_model/producto_model.php';
+require_once 'model/productos_model/proveedor_model.php';
 
 class productos_controller{
     private $model_p;
+    private $model_pro;
 
 
     function __construct(){
-        $this->model_p = new persona_model();
+        $this->model_p = new producto_model();
+        $this->model_pro= new proveedor_model();
     }
 
     function index(){
@@ -15,18 +18,18 @@ class productos_controller{
         require_once 'view/productos_view/producto_view.php';
                 
     }
-    function persona(){
-        
-        require_once 'view/nuevaPersona.php';
+    function aproducto(){
+        $query = $this->model_pro->get();
+        require_once 'view/productos_view/nuevoProducto.php';
         
     }
-    function ePersona(){
+    function eProducto(){
 
         require_once 'view/eliminarPersona.php';
 
     }
 
-    function aPersona(){
+    function acProducto(){
 
 		
         require_once 'view/actualizarPersona.php';
@@ -36,6 +39,9 @@ class productos_controller{
 
     function guardar(){
         $data['nombre']=$_REQUEST['txtnombre'];
+        $data['precio']=$_REQUEST['txtprecio'];
+        $data['proveedor']=$_REQUEST['sel_proveedor'];
+        $data['descripcion']=$_REQUEST['txtdescrip'];
         $this->model_p->insertar($data);
         $this->index();
     }
