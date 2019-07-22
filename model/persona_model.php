@@ -22,12 +22,13 @@ class persona_model{
         mysqli_query($this->bd,$sql) or die("Error de conexion");
     }
     
-    function eliminar($id){
-        $sql = "delete from tblpersonas where id= '$id'";
+   function eliminar($nitproveedor){
+       $sql = "delete from tblproveedores where nitproveedor= '$nitproveedor'";
         
         mysqli_query($this->bd,$sql) or die("Error de conexion");
         
     }
+
     
     function actualizar($razonsocial, $telefono, $direccion, $nombrecontacto, $cargocontacto, $celular, $pagweb, $nitproveedor){
         

@@ -47,9 +47,10 @@ class persona_controller{
     }
 
     function obtenerPersona(){
-        $id = $_REQUEST['txtid'];
-        $this->model_p->eliminar($id);
-        $this->index();
+        $nitproveedor = $_REQUEST['txtnitproveedor'];   
+        $this->model_p->eliminar($nitproveedor);
+        $this->index();	
+
 
     }
 
