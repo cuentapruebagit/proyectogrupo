@@ -16,7 +16,7 @@
             <form action="index.php?m=obtenerProducto" method="post">
                 <label>Ingrese Id:</label>
                 <input type="number" class="" name="txtid" required>
-                <button type="submit" class="btn btn-dark">Enviar</button>    
+                <button type="submit" class="btn btn-primary">Enviar</button>    
                 <br><br>    
 
                 <a href="index.php?m=''">&nbsp;Volver al inicio&nbsp;</a>

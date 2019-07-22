@@ -22,13 +22,13 @@
 				<input type="number" class="" name="txtprecio" min="0" max="9999999999" required><br><br>
 				<div>
 					<label>Nit proveedor:</label><br>
-					<input type="number" class="" name="txtproveedor">
+					<input type="number" class="" name="txtproveedor" required>
 				</div>
 				<br>
 				<label >Descripcion</label><br>
 				<textarea name="txtdescrip" id="txtdescrip" cols="30" rows="3"></textarea><br><br>
 				
-				<button type="submit" class="btn btn-dark">Enviar</button>
+				<button type="submit" class="btn btn-primary">Enviar</button>
 				<br><br>    
 
 				<a href="index.php?m=''">&nbsp;Volver al inicio&nbsp;</a>

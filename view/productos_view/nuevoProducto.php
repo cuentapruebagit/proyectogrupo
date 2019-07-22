@@ -33,7 +33,7 @@
 					<label >Descripcion</label><br>
 					<textarea name="txtdescrip" id="txtdescrip" cols="30" rows="3"></textarea><br><br>
 					<br><br><br>
-					<button type="submit" class="btn btn-dark">Guardar</button>
+					<button type="submit" class="btn btn-primary">Guardar</button>
 					<br><br>    
 
 					<a href="index.php?m=''">&nbsp;Volver al inicio&nbsp;</a>
