@@ -2,62 +2,76 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CRUD - MVC - Personas</title>
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Proyecto grupo</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
+        <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+        <link rel="stylesheet" href="css/estilosmvc.css">
 
     </head>
 
     <body>
-        <div class="container">
+        <div class="contenedor">
             <header>
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <a href="index.php?m=persona">&nbsp;Nuevo Registro&nbsp;</a>
-                        <a href="index.php?m=ePersona">&nbsp;Eliminar Registro&nbsp;</a>
-                        <a href="index.php?m=aPersona">&nbsp;Actualizar Registro&nbsp;</a>
-                    </div>
+                <div class="logo">
+                    <img src="imagenes/logo.png" alt="">
                 </div>
-
+                <nav class="menu">
+                    <a href="index.php?m=persona">Nuevo Registro</a>
+                    <a href="index.php?m=ePersona">Eliminar Registro</a>
+                    <a href="index.php?m=aPersona">Actualizar Registro</a>
+                </nav>
             </header>
-            <br>
-            <div class="row">
-                <div class="col-md-12">
+            <section class="main">
+                <article>
 
-                    <h2><u>Registro de personas</u></h2>
-
-
+            <!-- <div class="row">
+                <div class="col-md-12"> -->
+                    <h2>Registro de personas</h2>
                     <table>
-                        <thead>
+                        <!-- <thead> -->
                             <tr>
-
                                 <th>Id</th>
-                                <td></td>
+                                <!-- <td></td> -->
                                 <th> Nombre </th>
 
-                            </tr>
-
-                        </thead>
-                        <tbody>
-                            <?php foreach($query as $data): ?>
+                        <!-- </thead> -->
+                        <!-- <tbody> -->
+                            <?php foreach ($query as $data): ?>
                             <tr>
                                 <td><?php echo $data['id'] ?> </td>
-                                <td></td>
+                                <!-- <td></td> -->
 
-                                <td>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $data['nombre'] ?> </td>
+                                <td><?php echo $data['nombre'] ?> </td>
 
                             </tr>
-                            <?php endforeach; ?>        
-                        </tbody>
+                            </tr>
+                            <?php endforeach;?>
+                        <!-- </tbody> -->
                     </table>
 
-                </div>
-            </div>
+                <!-- </div>
+            </div> -->
+                </article>
+            </section>
+            <aside>
+                <div class="ad">Add</div>
+                <div class="ad">Add</div>
+            </aside>
 
-            <script src="../js/bootstrap.js"></script>
-            <script src="../js/jquery-3.4.1.js"></script>
+            <footer>
+                <div class="autor">
+                    <p>Copyright © 2019 - Proyecto grupo</p>
+                </div>
+                <div class="redes-sociales">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twiter</a>
+                </div>
+            </footer>
+           <!--  <script src="../js/bootstrap.js"></script>
+            <script src="../js/jquery-3.4.1.js"></script> -->
         </div>
     </body>
+
 </html>
