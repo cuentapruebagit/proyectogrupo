@@ -9,7 +9,7 @@ class persona_model{
     }
     
     function get(){
-        $sql = $this->bd->query("select * from tblpersonas");
+        $sql = $this->bd->query("select * from tblproveedores");
         while($fila = $sql->fetch_assoc()){
             $this->persona[] = $fila;
         }
