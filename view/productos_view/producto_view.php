@@ -32,9 +32,6 @@
 					<table>
 						<thead>
 							<tr>
-
-								
-								<td></td>
 								<th> ID </th>
 								<th>-NOMBRE-</th>
 								<TH>-PRECIO-</TH>
@@ -49,8 +46,8 @@
 								<td><?php echo $data['idproducto'] ?> </td>
 								<td><?php echo $data['nombre'] ?> </td>
 								<td><?php echo $data['precio'] ?> </td>
-								<td><?php echo $data['descripcion'] ?> </td>
 								<td><?php echo $data['nitproveedor'] ?> </td>
+								<td><?php echo $data['descripcion'] ?> </td>
 
 								
 							</tr>
