@@ -24,7 +24,9 @@ class producto_model{
     }
     
     function eliminar($id){
-        $sql = "delete from tblpersonas where id= '$id'";
+        
+        $sql = "delete from tblproductos where idproducto=' $id '";
+        
         
         mysqli_query($this->bd,$sql) or die("Error de conexion");
         

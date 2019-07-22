@@ -25,7 +25,7 @@ class productos_controller{
     }
     function eProducto(){
 
-        require_once 'view/eliminarPersona.php';
+        require_once 'view/productos_view/eliminarProducto.php';
 
     }
 
@@ -46,7 +46,7 @@ class productos_controller{
         $this->index();
     }
 
-    function obtenerPersona(){
+    function obtenerProducto(){
         $id = $_REQUEST['txtid'];
         $this->model_p->eliminar($id);
         $this->index();
@@ -64,6 +64,8 @@ class productos_controller{
         $this->index();
 
     }
+    
+    
 
 }
 
