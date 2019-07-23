@@ -28,6 +28,7 @@ class persona_controller{
 
     function aPersona(){
 
+
         require_once 'view/actualizarPersona.php';
 
     }
