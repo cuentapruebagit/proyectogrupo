@@ -1,0 +1,30 @@
+body{
+    background-color:#6adff3;
+    color: #000;
+    margin-top: 20px;
+
+}
+
+a{
+    background-color: #CCC;;
+    border-style: solid;
+    color: #000;
+    border-radius: 15px;
+}
+
+.container{
+
+    background-color: #08506f;
+    border-radius: 25px;
+    color:#fff;
+}
+
+
+table{
+    font-style: italic;
+    text-align: center;
+
+
+}
+
+
