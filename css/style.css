@@ -1,26 +1,26 @@
 body{
-    background-color:#fff;
+    background-color:#6adff3;
     color: #000;
     margin-top: 20px;
 
 }
 
 a{
-    background-color: #fff;;
+    background-color: #CCC;;
     border-style: solid;
-    color: #0454FF;
-    border-radius: 10px;
+    color: #000;
+    border-radius: 15px;
 }
 
 .container{
 
-    background-color: #04FFFB;
-    border-radius: 20px;
+    background-color: #ceeb58;
+    border-radius: 25px;
 }
 
 
 table{
-    font-style: oblique;
+    font-style: italic;
     text-align: center;
 
 
