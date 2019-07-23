@@ -1,6 +1,7 @@
 <?php
 require_once 'bd/conexion.php';
 require_once 'controller/productos_controller/productos_controller.php';
+require_once 'controller/venta_controller/venta_controller.php';
 
 $controller = new productos_controller();
 

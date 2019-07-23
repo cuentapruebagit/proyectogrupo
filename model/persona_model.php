@@ -9,7 +9,11 @@ class persona_model{
     }
     
     function get(){
+<<<<<<< HEAD
+        $sql = $this->bd->query("select * from tblpersonas");
+=======
         $sql = $this->bd->query("select * from tblproveedores");
+>>>>>>> 6e084ecbf733f08413c5404454bdd5ac33499439
         while($fila = $sql->fetch_assoc()){
             $this->persona[] = $fila;
         }
@@ -17,17 +21,34 @@ class persona_model{
     }
     
     function insertar($dato){
+<<<<<<< HEAD
+        $sql = "insert into tblpersonas (nombre) values"."('".$dato['nombre']."')";
+=======
         $sql = "insert into tblproveedores (nitproveedor, razonsocial, telefono, direccion, nombrecontacto,cargocontacto,celular, pagweb) VALUES"."('".$dato['nitproveedor'].", ".$dato['razonsocial'].", ".$dato['telefono'].", ".$dato['direccion'].", ".$dato['nombrecontacto'].", ".$dato['cargocontacto'].", ".$dato['celular'].", ".$dato['pagweb']."')";
+>>>>>>> 6e084ecbf733f08413c5404454bdd5ac33499439
         
         mysqli_query($this->bd,$sql) or die("Error de conexion");
     }
     
+<<<<<<< HEAD
+    function eliminar($id){
+        $sql = "delete from tblpersonas where id= '$id'";
+=======
    function eliminar($nitproveedor){
        $sql = "delete from tblproveedores where nitproveedor= '$nitproveedor'";
+>>>>>>> 6e084ecbf733f08413c5404454bdd5ac33499439
         
         mysqli_query($this->bd,$sql) or die("Error de conexion");
         
     }
+<<<<<<< HEAD
+    
+    function actualizar($nombre,$id){
+        $sql = "update tblpersonas set nombre ='".$nombre['nombre']."' where id=$id";
+        
+        mysqli_query($this->bd,$sql) or die("Error de conexion");
+    }
+=======
 
     
     function actualizar($razonsocial, $telefono, $direccion, $nombrecontacto, $cargocontacto, $celular, $pagweb, $nitproveedor){
@@ -45,6 +66,7 @@ class persona_model{
         
         mysqli_query($this->bd,$sql) or die("Error de conexion");
     }  
+>>>>>>> 6e084ecbf733f08413c5404454bdd5ac33499439
     
 }
 
