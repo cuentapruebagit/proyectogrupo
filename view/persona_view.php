@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CRUD - MVC - Personas</title>
+        <title>CRUD - MVC - Proveedores</title>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -15,7 +15,7 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <a href="index.php?m=persona">&nbsp;Nuevo Registro&nbsp;</a>
+                        <a href="index.php?m=persona">&nbsp;Nuevo Proveedor&nbsp;</a>
                         <a href="index.php?m=ePersona">&nbsp;Eliminar Registro&nbsp;</a>
                         <a href="index.php?m=aPersona">&nbsp;Actualizar Registro&nbsp;</a>
                     </div>
@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="col-md-12">
 
-                    <h2><u>Registro de personas</u></h2>
+                    <h2><u>Registro de Proveedores</u></h2>
 
 
                     <table>
