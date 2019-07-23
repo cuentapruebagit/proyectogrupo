@@ -1,10 +1,8 @@
 <?php
 require_once 'bd/conexion.php';
+require_once 'controller/productos_controller/productos_controller.php';
 
-require_once 'controller/venta_controller/venta_controller.php';
-
-$controller = new venta_controller();
-
+$controller = new productos_controller();
 
 
 if(!empty($_REQUEST['m'])){
