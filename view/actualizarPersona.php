@@ -14,10 +14,30 @@
         <div class="container">
             <h2>Formulario para actualizar registro</h2>
             <form action="index.php?m=actPersona" method="post">
-                <label>Ingrese Id:</label>
-                <input type="number" class="" name="txtid" required>
-                <label>Ingrese Nombre:</label>
-                <input type="text" class="" name="txtnombre1" required>
+                <label>Ingrese Nit:</label>
+                <input type="number" class="" name="txtnitproveedor" required>
+                
+                <label>Ingrese Razon Soacial:</label>
+                <input type="text" class="" name="txtrazonsocial" required>
+                
+                <label>Ingrese un Télefono:</label>
+                <input type="text" class="" name="txttelefono" required>
+                
+                <label>Ingrese una Dirección:</label>
+                <input type="text" class="" name="txtdireccion" required>
+                
+                <label>Ingrese El Nombre de Contacto:</label>
+                <input type="text" class="" name="txtnombrecontacto" required>
+                
+                <label>Ingrese El Cargo del Contacto:</label>
+                <input type="text" class="" name="txtcargocontacto" required>
+                
+                <label>Ingrese Un Celular</label>
+                <input type="text" class="" name="txtcelular" required>
+                
+                <label>Ingrese La Página Web:</label>
+                <input type="text" class="" name="txtpagweb" required>
+                
                 <button type="submit" class="btn btn-dark">Enviar</button>
                 <br><br>    
 

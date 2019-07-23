@@ -2,6 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
+
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <title>Proyecto grupo</title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
@@ -16,6 +17,7 @@
             <header>
                 <div class="logo">
                     <img src="imagenes/logo.png" alt="">
+
                 </div>
                 <nav class="menu">
                     <a href="index.php?m=persona">Nuevo Registro</a>
@@ -25,7 +27,6 @@
             </header>
             <section class="main">
                 <article>
-
             <!-- <div class="row">
                 <div class="col-md-12"> -->
                     <h2>Registro de personas</h2>
