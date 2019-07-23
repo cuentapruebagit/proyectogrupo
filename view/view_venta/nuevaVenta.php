@@ -22,6 +22,7 @@
                 <label>Ingrese total factura:</label>
                 <input type="number" class="" name="txtfactura" required><br>
                 <button type="submit" class="btn btn-dark">Guardar</button>
+
                 <br><br>    
 
                 <a href="index.php?m=''">&nbsp;Volver al inicio&nbsp;</a>

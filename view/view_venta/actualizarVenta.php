@@ -12,6 +12,7 @@
     <body>
 
         <div class="container">
+
             <h2>Formulario para actualizar registro de venta</h2>
             <form action="index.php?m=actVenta" method="post">
                 <label>Ingrese Id de factura:</label>
@@ -22,6 +23,8 @@
                 <input type="number" class="" name="txtcedula1" required><br>
                 <label>Ingrese total factura de venta:</label>
                 <input type="number" class="" name="txtfactura1" required><br>
+
+
                 <button type="submit" class="btn btn-dark">Enviar</button>
                 <br><br>    
 
